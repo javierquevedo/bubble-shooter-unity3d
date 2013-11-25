@@ -2,8 +2,10 @@ Bubble-shooter-unity3d
 ======================
 
 A bubble shooter clone game for Unity3D, written in C#.
-opyright (C) 2013. Javier Quevedo-Fernández
+Copyright (C) 2013. Javier Quevedo-Fernández
 jquevedo_(at)_gmail.com
+
+![BubbleShooter](BubbleShooter.png)
 
 Usage
 ---------------
