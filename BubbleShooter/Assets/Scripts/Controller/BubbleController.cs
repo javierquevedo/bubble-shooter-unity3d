@@ -54,7 +54,7 @@ namespace com.javierquevedo{
 		void Start () {
 			
 			
-			this.renderer.material.color = JQUtils.ColorForBubbleColor(bubble.color);		
+			this.GetComponent<Renderer>().material.color = JQUtils.ColorForBubbleColor(bubble.color);		
 		}
 
 		void Update () {
@@ -82,8 +82,8 @@ namespace com.javierquevedo{
 		
 		public void kill(bool explodes){
 			StopAllCoroutines();
-			Destroy(this.transform.rigidbody);
-			Destroy(this.transform.collider);
+			Destroy(this.transform.GetComponent<Rigidbody>());
+			Destroy(this.transform.GetComponent<Collider>());
 			if (explodes)
 			{
 				StartCoroutine(scaleTo(new Vector3(0,0,0), 0.15f));
@@ -110,7 +110,7 @@ namespace com.javierquevedo{
 				yield return null;
 			}
 			transform.position = destination;
-			if (this.rigidbody == null){
+			if (this.GetComponent<Rigidbody>() == null){
 				Destroy (this.gameObject);
 			}
 		}
@@ -126,7 +126,7 @@ namespace com.javierquevedo{
 				transform.localScale = target;
 				yield return null;
 			}
-			if (this.rigidbody == null){
+			if (this.GetComponent<Rigidbody>() == null){
 				Destroy (this.gameObject);
 			}
 		}
