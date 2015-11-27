@@ -10,7 +10,7 @@ jquevedo_(at)_gmail.com
 
 Usage
 ---------------
-Open the project in Unity 4.x and above, and load the BustAMove scene.
+Open the project in Unity 5.x and above, and load the BustAMove scene.
 Click on Play to start the game. You can control the game using the mouse to aim and shoot the bubbles.
 
 Licensing
